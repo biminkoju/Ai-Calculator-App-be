@@ -5,7 +5,7 @@ from PIL import Image
 from constants import GEMINI_API_KEY
 
 gay.configure(api_key=GEMINI_API_KEY)
-model=gay.GenerativeModel(model_name="gemini-1.5-flash-002")
+model=gay.GenerativeModel(model_name="gemini-1.5-flash")
 
 def analyze_image(img:Image,dict_of_vars:dict):
     dict_of_vars_str=json.dumps(dict_of_vars,ensure_ascii=False)
